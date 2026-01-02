@@ -12,5 +12,9 @@ public class Welcomer{
 	}
 	public String saySome(){
 		return "something in the way";
-	}
+	}    
+    // Новый метод, возвращающий реплику с словом "hunter"
+    public String getHunterReply() {
+        return "The hunter becomes the hunted when courage falters.";
+    }
 }
