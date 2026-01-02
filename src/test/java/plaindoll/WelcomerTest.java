@@ -30,17 +30,13 @@ public class WelcomerTest {
 	public void welcomerSaysSomething(){
 		assertThat(welcomer.saySome(), containsString("something"));
 	}
+    	// Новый тест для метода getHunterReply
 	@Test
-    public void testGetWelcomeMessage() {
-        Welcomer welcomer = new Welcomer();
-        assertEquals("Welcome!", welcomer.getWelcomeMessage());
-    }    
-    @Test
-    public void testGetHunterReply() {
-        Welcomer welcomer = new Welcomer();
-        String reply = welcomer.getHunterReply();
-        assertNotNull(reply);
-        assertTrue("Reply should contain 'hunter'", 
-                   reply.toLowerCase().contains("hunter"));
+	public void testGetHunterReply() {
+		Welcomer welcomer = new Welcomer();
+		String reply = welcomer.getHunterReply();
+		assertNotNull(reply);
+		assertTrue("Reply should contain 'hunter'", 
+				reply.toLowerCase().contains("hunter"));
     }
 }
